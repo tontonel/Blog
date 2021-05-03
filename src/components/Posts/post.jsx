@@ -9,7 +9,7 @@ export default function Post(props) {
             <Grid  className= {classes.gridItem} item >
                     <Box boxShadow= {2} className= {classes.post}>
                         <Box  className= {classes.postHead}>
-                            <img alt = "avatar" className = {classes.photo} src = {props.avatar}></img>
+                            <img className = {classes.photo} src = {props.avatar}></img>
                             <Typography className = {classes.name}>
                                 {props.name}
                             </Typography>
