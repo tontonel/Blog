@@ -23,9 +23,9 @@ export default function NewPost() {
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', {
             title: title,
             text: text
-          }, { withCredentials: true, headers:{
-            "content-type": "application/json"
-          } }).then ((res) => (console.log (res)));
+          }, { withCredentials: true, headers: {
+            'Content-Type': 'application/json'
+          } });
     }
     return (
         <div>
