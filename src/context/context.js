@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState, useReducer} from 'react';
+import React, { createContext, useEffect, useReducer} from 'react';
 import axios from "axios";
 export const Authentication = createContext (null);
 
@@ -42,9 +42,8 @@ export const Context = ({children}) =>  {
         const config = {
             withCredentials: true
         };
-        console.log ()
             axios.get ("https://protected-temple-06423.herokuapp.com/api/isLoggedIn", config).then ((res) =>{
-                console.log (res.data)
+                // console.log (res.data)
                 if (state.isLogged === false && res.data.login === true)
                 {
                     var picture = "";

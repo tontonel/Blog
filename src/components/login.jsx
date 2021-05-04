@@ -1,6 +1,6 @@
 import React from 'react'
 import {FacebookLoginButton, GoogleLoginButton} from "react-social-login-buttons";
-import {Container, Grid, makeStyles} from "@material-ui/core";
+import {Container, Grid} from "@material-ui/core";
 import useStyles from "./style";
 
 export default function Login() {

@@ -1,8 +1,7 @@
-import React, { useEffect , Link} from 'react'
+import React from 'react'
 import useStyle from "./style"
 import {useState} from "react";
 import axios from "axios";
-import {useHistory} from "react-router-dom"
 import Navbar from "./navBar";
 import { Box, Button, Typography} from '@material-ui/core';
 

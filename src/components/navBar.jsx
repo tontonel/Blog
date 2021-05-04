@@ -9,7 +9,7 @@ export default function NavBar({isHome}) {
     const classes = useStyle();
     const {state} = useContext (Authentication);
     const {isLogged, photo} = state;
-    console.log (isLogged);
+    // console.log (isLogged);
 return (
         <div>
           <AppBar position="fixed" className= {classes.root}>

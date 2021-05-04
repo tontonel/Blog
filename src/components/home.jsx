@@ -1,5 +1,5 @@
 
-import {React, useContext, useEffect} from "react"
+import {React} from "react"
 import Posts from "./Posts/posts";
 import NavBar from "./navBar"
 
