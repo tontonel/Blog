@@ -24,7 +24,7 @@ export default function NewPost() {
             title: title,
             text: text
           }, { withCredentials: true, headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'text/plain'
           } });
     }
     return (
