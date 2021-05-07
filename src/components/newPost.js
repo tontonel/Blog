@@ -21,7 +21,9 @@ export default function NewPost() {
     }
     function handelSubmit (event) {
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', {
-          }, { headers: {'Content-Type': 'application/x-www-form-urlencoded'}, withCredentials: true });
+          }, {headers: {
+            'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
+          }});
     }
     return (
         <div>
