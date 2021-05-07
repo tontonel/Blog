@@ -25,7 +25,7 @@ export default function NewPost() {
                 title: title,
                 text: text
             }
-          }, { withCredentials: true });
+          };
     }
     return (
         <div>
