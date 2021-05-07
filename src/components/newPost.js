@@ -21,8 +21,10 @@ export default function NewPost() {
     }
     function handelSubmit (event) {
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', {
-            title: title,
-            text: text
+            params: {
+                title: title,
+                text: text
+            }
           }, { withCredentials: true });
     }
     return (
