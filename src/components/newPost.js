@@ -25,7 +25,7 @@ export default function NewPost() {
                 title: title,
                 text: text
             }
-          };
+          }, { headers: {'Content-Type': 'application/x-www-form-urlencoded'} withCredentials: true });
     }
     return (
         <div>
