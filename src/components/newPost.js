@@ -20,14 +20,14 @@ export default function NewPost() {
         event.preventDefault();
     }
     function handelSubmit (event) {
-        axios.post('https://protected-temple-06423.herokuapp.com/api/posts', {
-            params: {
-                title: title,
-                text: text
-            }
-          }, {headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-          }, withCredentials: true});
+        let data = qs.stringify({
+            title: title,
+            text: text;
+        });
+        axios.post('https://protected-temple-06423.herokuapp.com/api/posts', data, {
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+          }, witdhCredentials: true});
     }
     return (
         <div>
