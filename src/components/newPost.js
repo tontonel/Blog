@@ -23,7 +23,7 @@ export default function NewPost() {
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', {
           }, {headers: {
             'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
-          }});
+          }, withCredentials: true});
     }
     return (
         <div>
