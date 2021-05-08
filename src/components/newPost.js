@@ -28,7 +28,9 @@ export default function NewPost() {
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', data, {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
-          }, witdhCredentials: true});
+          }, witdhCredentials: true}).then ((res) => {
+              console.log (res);
+          });
     }
     return (
         <div>
