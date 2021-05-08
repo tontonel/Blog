@@ -3,6 +3,7 @@ import useStyle from "./style"
 import {useState} from "react";
 import axios from "axios";
 import Navbar from "./navBar";
+import qs from "qs";
 import { Box, Button, Typography} from '@material-ui/core';
 
 export default function NewPost() {
@@ -22,7 +23,7 @@ export default function NewPost() {
     function handelSubmit (event) {
         let data = qs.stringify({
             title: title,
-            text: text;
+            text: text
         });
         axios.post('https://protected-temple-06423.herokuapp.com/api/posts', data, {
             headers: {
