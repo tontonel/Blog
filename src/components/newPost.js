@@ -21,11 +21,10 @@ export default function NewPost() {
         event.preventDefault();
     }
     function handelSubmit (event) {
-        let data = {
+        let data = qs.stringify({
             title: title,
             text: text
-        };
-        console.log ("da");
+        });
         fetch("https://protected-temple-06423.herokuapp.com/api/posts", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
@@ -37,8 +36,8 @@ export default function NewPost() {
             },
             redirect: 'follow', // manual, *follow, error
             referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-            body: JSON.stringify(data) // body data type must match "Content-Type" header
-          }).then (res => console.log (res));
+            body: data // body data type must match "Content-Type" header
+          });
     }
     return (
         <div>
