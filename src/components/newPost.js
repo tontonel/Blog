@@ -29,7 +29,7 @@ export default function NewPost() {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
           }, witdhCredentials: true}).then ((res) => {
-              console.log ("fddljdjflka");
+              console.log (res));
           });
     }
     return (
