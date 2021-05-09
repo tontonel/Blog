@@ -25,6 +25,7 @@ export default function NewPost() {
             title: title,
             text: text
         });
+        console.log ("da");
         fetch("https://protected-temple-06423.herokuapp.com/api/posts", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
