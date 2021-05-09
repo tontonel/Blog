@@ -25,7 +25,7 @@ export default function NewPost() {
             title: title,
             text: text
         });
-        axios.post('http://localhost:3001/api/posts', data, {
+        axios.post('https://protected-temple-06423.herokuapp.com/api/posts', data, {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
           }, witdhCredentials: true}).then ((res) => {
