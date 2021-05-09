@@ -40,4 +40,4 @@ export default makeStyles ((theme) => ({
      title: {
          display: "flex",
      },
-}, {index: 2}))
+}))
