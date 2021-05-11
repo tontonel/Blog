@@ -6,9 +6,6 @@ export default makeStyles({
         backgroundColor: "#aaaaaa",
         marginBottom: "10rem"
       },
-      menuButton: {
-        marginRight: theme.spacing(2),
-      },
       title: {
         flexGrow: 0.97,
         letterSpacing: "6px",
