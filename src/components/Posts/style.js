@@ -9,6 +9,7 @@ export default makeStyles ({
      paper: {
         margin: "auto",
         marginTop: "6rem",
+        paddingTop: "3rem",
         maxWidth: 1000,
         backgroundColor: "#ccf2f4",
     },
