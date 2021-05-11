@@ -89,4 +89,4 @@ export default makeStyles({
       backgroundColor: "#ccf2f4",
      }
 
-}, {index: 1});
+});
