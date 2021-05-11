@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core";
 
-export default makeStyles ((theme) => ({
+export default makeStyles ({
     gridItem: {
         width: "90%",
         marginBottom: "1rem",
@@ -40,4 +40,4 @@ export default makeStyles ((theme) => ({
      title: {
          display: "flex",
      },
-}, {index: 1}))
+}, {index: 1})

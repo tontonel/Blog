@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core";
 
-export default makeStyles((theme) => ({
+export default makeStyles({
     root: {
         flexGrow: 1,
         backgroundColor: "#aaaaaa",
@@ -89,4 +89,4 @@ export default makeStyles((theme) => ({
       backgroundColor: "#ccf2f4",
      }
 
-}, {index: 1}));
+}, {index: 1});
