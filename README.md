@@ -3,6 +3,8 @@ This is a full stack app build with MERN stack and powered by Oauth authenticati
 
 Deployed on netlify(frontend) and heroku(backend)
 
+https://fervent-goldberg-e8475d.netlify.app/
+
 Home page
 ![image](https://user-images.githubusercontent.com/66739208/159130023-d2addbad-f8f0-4b12-9fe0-75d556e7b7d2.png)
 
