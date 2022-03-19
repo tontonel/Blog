@@ -1,5 +1,6 @@
 # Blog-app
 This is a full stack app build with MERN stack and powered by Oauth authentication with google and facebook.
+
 Deployed on netlify(frontend) and heroku(backend)
 
 Home page
