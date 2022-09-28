@@ -27,15 +27,15 @@ const reducer = (state, action) => {
             };
         case "LOG-OUT":
             return {
-                isLogged: "false",
-                ...state
+                ...state,
+                isLogged: false
             }
         default:
             break;
     }
 }
 
-export const Context = ({children}) =>  {
+export const Context = ({ children }) =>  {
     const initstate = initialState ();
     const [state, dispatch] = useReducer(reducer, initstate)
     useEffect (() => {

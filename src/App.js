@@ -1,10 +1,10 @@
 import React from 'react';
-import {Context} from "./context/context.js";
+import { Context } from "./context/context.js";
 import Login from "./components/login";
 import Home from "./components/home";
 import NewPost from "./components/newPost"
 import PrivateRoute from "./components/privateRoute"
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Logout from './components/logout.jsx';
 
 export default function App() {
