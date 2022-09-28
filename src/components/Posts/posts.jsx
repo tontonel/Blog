@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Grid, Paper} from "@material-ui/core";
+import React, { useEffect, useState } from 'react';
+import { Grid, Paper } from "@material-ui/core";
 import axios from "axios"
 import Post from './post';
 import uniqId from "uniqid";
@@ -15,9 +15,8 @@ export default function Posts() {
                 setPosts (result.data);
         })
         return () => mounted = false;
-    },[])
-    function handlePost (post)
-    {
+    }, [])
+    function handlePost (post) {
         return <Post key = {uniqId()} avatar = {post.avatar} title = {post.title} name = {post.name} text = {post.text}/>
     }
     return (
