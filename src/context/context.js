@@ -26,9 +26,12 @@ const reducer = (state, action) => {
                 name: action.auth.name
             };
         case "LOG-OUT":
+            sessionStorage.removeItem("auth");
             return {
                 ...state,
-                isLogged: false
+                isLogged: false,
+                photo: "",
+                name:""
             }
         default:
             break;

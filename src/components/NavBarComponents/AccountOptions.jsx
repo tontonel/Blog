@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, MenuItem } from "@material-ui/core";
 import { Authentication } from "../../context/context";
 import { useContext } from "react";
-
+import axios from "axios";
 
 export default function AccountOptions({ photoAnchor, setPhotoAnchor }) {
     const { dispatch } = useContext(Authentication)
@@ -10,7 +10,8 @@ export default function AccountOptions({ photoAnchor, setPhotoAnchor }) {
             setPhotoAnchor(null)
     }
     const handleClick = () => {
-        dispatch( { type: "LOG-OUT" });
+        axios.get("https://protected-temple-06423.herokuapp.com/logout");
+        dispatch( { type: "LOG-OUT" } );
         handleClose();
     }
     return (
