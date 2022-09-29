@@ -1,6 +1,5 @@
 import React from "react";
 import { Menu, MenuItem } from "@material-ui/core";
-import "./style.css"
 import { Authentication } from "../../context/context";
 import { useContext } from "react";
 
