@@ -10,7 +10,10 @@ export default function AccountOptions({ photoAnchor, setPhotoAnchor }) {
             setPhotoAnchor(null)
     }
     const handleClick = () => {
-        axios.get("https://protected-temple-06423.herokuapp.com/api/logout");
+        const config = {
+            withCredentials: true
+        };
+        axios.get("https://protected-temple-06423.herokuapp.com/api/logout", config);
         dispatch( { type: "LOG-OUT" } );
         handleClose();
     }
